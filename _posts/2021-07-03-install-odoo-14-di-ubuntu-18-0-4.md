@@ -146,9 +146,16 @@ WantedBy=multi-user.target
 ```
 
 ```sh
+# Enable Odoo Service
 sudo systemctl enable odoo
+
+# Run Odoo Service on the background
 sudo systemctl start odoo
+
+# Stop Background Odoo Service
 sudo systemctl stop odoo
+
+# Restart Odoo Service
 sudo systemctl restart odoo
 ```
 
