@@ -3,6 +3,8 @@ title: Membuat Modul Baru di Odoo 14
 tags: Odoo-14 Odoo 
 ---
 
+![Odoo Header](media/header-odoo.svg)
+
 Odoo memiliki fitur modul yang _plug-and-play_ yang artinya developer bisa memodifikasi aplikasi Odoo sesuai kebutuhan.  Berikut ini langkah-langkah membuat modul baru di Odoo 14
 
 ## 1. Membuat Folder Modul Odoo

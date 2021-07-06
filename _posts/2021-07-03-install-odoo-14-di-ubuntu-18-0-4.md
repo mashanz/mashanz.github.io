@@ -3,6 +3,8 @@ title: Install Odoo 14 di Ubuntu 18.04
 tags: Odoo-14 Odoo 
 ---
 
+![Odoo Header](media/header-odoo.svg)
+
 Odoo merupakan Perangkat lunak ERP (___Enterprise Resource Planning___) yang dulunya bernama adalah OpenERP. Odoo memiliki 2 versi yaitu Community dan Enterprise. Perbedaan nya adalah Community dibagikan gratis serta enterprise adalah versi berbayarnya dengan fitur ___pre-made___ lebih banyak. Namun jangan khawatir, walaupun versi gratis. Developer dapat menambahkan modul untuk menambahkan fitur-fitus sesuai kebutuhan.
 
 Dalam artikel ini akan ditunjukan cara instalasi _Source Code_ __Odoo 14 Community Edition__ pada Sistem Operasi Ubuntu 18.04 x64.
