@@ -3,7 +3,14 @@ title: Install Odoo 14 di Ubuntu 18.04
 tags: Odoo-14 Odoo 
 ---
 
+Odoo merupakan Perangkat lunak ERP (___Enterprise Resource Planning___) yang dulunya bernama adalah OpenERP. Odoo memiliki 2 versi yaitu Community dan Enterprise. Perbedaan nya adalah Community dibagikan gratis serta enterprise adalah versi berbayarnya dengan fitur ___pre-made___ lebih banyak. Namun jangan khawatir, walaupun versi gratis. Developer dapat menambahkan modul untuk menambahkan fitur-fitus sesuai kebutuhan.
+
+Dalam artikel ini akan ditunjukan cara instalasi _Source Code_ __Odoo 14 Community Edition__ pada Sistem Operasi Ubuntu 18.04 x64.
+
 ## 1. Setup Update
+
+Sebelum melakukan instalasi, pastikan package ubuntu sudah ter-___update___. Caranya ketikan command berikut pada terminal sesuai urutan.
+
 ```sh
 sudo apt-get update -y
 sudo apt install software-properties-common -y
@@ -15,6 +22,9 @@ sudo apt-get upgrade -y
 <!--more-->
 
 ## 2. Install Odoo Dependencies
+
+Setelah package terupdate, saatnya install dependencie perangkat lunak Odoo 14 dengan menjalankan perintah berikut pada terminal.
+
 ```sh
 sudo apt-get install python3 python3-dev python3-pip python3-suds \
     python-dev libldap2-dev \
@@ -33,7 +43,10 @@ sudo apt-get install python3 python3-dev python3-pip python3-suds \
     node-clean-css node-less python-gevent postgresql -y
 ```
 
-## 3. install `wkhtmltopdf`
+## 3. install ___wkhtmltopdf___
+
+WKHTMLTOPDF adalah library dependency yang dibutuhkan pada perangkat lunak Odoo ini karna dibutuhkan untuk fitur Cetak Report, Invoice, Quotation dan lain Dalam Bentuk PDF.
+
 ```sh
 wget https://github.com/wkhtmltopdf/packaging/releases/download/0.12.6-1/wkhtmltox_0.12.6-1.bionic_amd64.deb
 sudo apt-get install wkhtmltox_0.12.6-1.bionic_amd64.deb
@@ -42,7 +55,12 @@ sudo ln -s /usr/local/bin/wkhtmltoimage /usr/bin
 sudo rm ./wkhtmltox_0.12.6-1.bionic_amd64.deb
 ```
 
-## 4. Install Virtual Environment
+## 4. Install Virtual Environment (Optional)
+
+Karena Odoo dibuat menggunakan Pemrograman Python, disarankan agar menginstall virtual environment agar tidak merusak Library Python bawaan. Dalam artikel ini akan menggunakan Virtual Environment dari Anaconda. Developer juga bisa menggunakan Virtual Environment lain sesuai kebutuhan/preferensi.
+
+Berikut cara install Virtual Environment Miniconda
+
 ```sh
 wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
 chmod +x Miniconda3-latest-Linux-x86_64.sh
