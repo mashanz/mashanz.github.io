@@ -8,6 +8,8 @@ Odoo memiliki fitur modul yang _plug-and-play_ yang artinya developer bisa memod
 ## 1. Membuat Folder Modul Odoo
 Pada tahap ini. Developer akan membuat folder baru dengan format snake_case, artinya penamaan menggunakan format huruf kecil bersambung dengan _underscore_. contoh nama folder modul `modul_jual_beli_sayur`.
 
+<!--more-->
+
 ## 2. Membuat File dan Folder di Dalam Folder Module
 Odoo memiliki standard dalam membuat module. Di dalam folder tersebut harus terdiri dari `__init__.py` dan `__manifest__.py`. Berikut adalah contoh isi folder module `modul_jual_beli_sayur`
 ```
