@@ -2,6 +2,9 @@
 layout: article
 title: About
 key: about
+header:
+  theme: dark
+  background: 'linear-gradient(135deg, rgb(251, 176, 59), rgb(41, 171, 226))'
 ---
 
 Hi, I'm `Hanjara`, I put my learning progress here. 
