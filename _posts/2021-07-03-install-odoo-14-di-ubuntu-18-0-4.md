@@ -68,24 +68,39 @@ chmod +x Miniconda3-latest-Linux-x86_64.sh
 ```
 
 ## 5. Download Odoo 14
+
+Dalam tahap ini, Developer bisa mengunduh kode sumber Odoo versi 14 di repository GitHub dengan command berikut.
+
 ```sh
 sudo git clone --depth 1 --branch 14.0 https://www.github.com/odoo/odoo.git
 ```
+> Catatan: <br/>
+di sini command menggunakan beberapa argumen `--depth 1` artinya 1 history git terakhir dan `--branch 14.0` artinya akan mengunduh kode sumber di branch 14.0
 
 ## 6. Install Odoo Python Requirement
+
+Setelah selesai terunduh, masuk ke folder Odoo dan install dependency python dengan command berikut.
+
 ```sh
 cd odoo
 python -m pip install -r requirements.txt
 cd ~
 ```
+> Catatan: <br/>
+sebelum menginstall dependency, pastikan virtual environment sudah aktif
 
 ## 7. Persiapkan File Log
+
+File log merupakan salah satu element penting dalam debuging suatu projek.
+
 ```sh
 touch odoo.log
 ```
 
 ## 8. Persiapkan File Konfigurasi
-`odoo.conf`
+
+Berikut ini adalah isi dari file `odoo.conf`. File ini berfungsi sebagai konfigurasi server Odoo.
+
 ```conf
 [options]
 admin_passwd = admin
@@ -94,6 +109,9 @@ logfile = odoo.log
 ```
 
 ## 9. Persiapkan Postgres SQL User
+
+Untuk mengakses Database, Developer harus membuat akun database kusus untuk projek ini. Dalam artikel ini menggunakan database Postgres (Database Default Odoo). Jalankan command berikut untuk menambahkan user baru.
+
 ```
 sudo su - postgres 
 createuser NAMA-USER-KAMU --interactive --pwprompt
@@ -101,13 +119,18 @@ exit
 ```
 
 ## 10. persiapkan skript untuk eksekusi
-`odoo.sh`
+
+Buat file `odoo.sh` untuk eksekusi server Odoo
+
 ```sh
 /home/NAMA-USER-KAMU/odoo/odoo-bin -c /home/NAMA-USER-KAMU/odoo.conf -r "NAMA-USER-KAMU" -w "PASSWORD-POSTGRES" --db_host "127.0.0.1" --limit-time-real=0 -s
+
+chmod +x odoo.sh
 ```
 
 ## 11. Persiapkan Service
-`/lib/systemd/system/odoo.service`
+
+Buat file di `/lib/systemd/system/odoo.service` dan isi file tersebut dengan option berikut.
 
 ```conf
 [Unit]
