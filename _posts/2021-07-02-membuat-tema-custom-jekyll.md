@@ -3,6 +3,8 @@ title:  "Membuat Custom Theme Jekyll"
 tags: jekyll
 ---
 
+![Odoo Header](https://mashanz.com/media/header-jekyll.svg)
+
 `Github` memiliki fitur hosting `static website` secara gratis. Pada fitur tersebut pengguna bisa membuat website menggunakan HTML, CSS dan JavaScript. 
 
 Beberapa framework frontend seperti `React` atau `Jekyll` juga bisa melakukan hosting di sana.
