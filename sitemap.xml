@@ -1,0 +1,36 @@
+<urlset 
+    xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" 
+    xmlns:video="http://www.google.com/schemas/sitemap-video/1.1" 
+    xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+
+    <url>
+        <loc>https://mashanz.com</loc>
+        <lastmod>2020-01-01</lastmod>
+    </url>
+
+    <url>
+        <loc>https://mashanz.com/cv</loc>
+        <lastmod>2020-01-01</lastmod>
+    </url>
+
+    <url>
+        <loc>https://mashanz.com/inquiry</loc>
+        <lastmod>2020-01-01</lastmod>
+    </url>
+
+    <url>
+        <loc>https://fastrack.mashanz.com</loc>
+        <lastmod>2020-01-01</lastmod>
+    </url>
+
+    <url>
+        <loc>https://centragro.mashanz.com</loc>
+        <lastmod>2020-01-01</lastmod>
+    </url>
+
+    <url>
+        <loc>https://mashanz.com</loc>
+        <lastmod>2020-01-01</lastmod>
+    </url>
+
+</urlset>
