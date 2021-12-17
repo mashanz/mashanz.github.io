@@ -5,7 +5,7 @@ function Main() {
                 <img className="w-24 h-24 md:w-64 md:h-64 md:rounded-none md:rounded-l-xl rounded-full mx-auto" src="https://avatars.githubusercontent.com/u/9214059?v=4" alt="" width="384" height="512" />
                 <div className="pt-4 md:p-4 text-center md:text-left space-y-4">
                     <blockquote>
-                        <p className="md:text-lg md:font-medium text-base font-normal text-gray-100 md:text-gray-800">
+                        <p className="md:text-lg md:font-medium text-base font-normal text-gray-100 md:text-gray-800 p-4">
                             Hi 👋🏻 I'm Han. ⌨️ Coder since 2006 and still learning. 
                             🧬 Currently focusing on 💻 Fullstack Web Development and ⚙️ Entrepreneurship.
                         </p>
