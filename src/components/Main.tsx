@@ -1,7 +1,7 @@
 function Main() {
     return (
-        <section className="bg-gray-800 md:pt-4">
-            <figure className="md:flex md:rounded-xl pt-4 md:p-0 md:max-w-2xl mx-auto md:bg-gray-100 rounded-none py-0 bg-gray-800">
+        <section className="md:pt-4">
+            <figure className="md:flex md:rounded-xl pt-4 md:p-0 md:max-w-2xl mx-auto md:bg-gray-100 rounded-none py-0">
                 <img className="w-24 h-24 md:w-64 md:h-64 md:rounded-none md:rounded-l-xl rounded-full mx-auto" src="https://avatars.githubusercontent.com/u/9214059?v=4" alt="" width="384" height="512" />
                 <div className="pt-4 md:p-4 text-center md:text-left space-y-4">
                     <blockquote>

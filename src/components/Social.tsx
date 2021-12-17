@@ -16,7 +16,7 @@ function SocialItem({ title='', icon=linkedin, link='#' }) {
 
 function Social() {
     return (
-        <section className="bg-gray-800 md:pt-0">
+        <section className="md:pt-0">
             <h1 className="font-mono text-center py-4 text-yellow-500 font-bold text-2xl">./socials</h1>
             <div className="grid grid-cols-1 md:grid-cols-3 md:max-w-2xl md:mx-auto px-4 md:px-0 gap-2">
                 <SocialItem title="Blog Posts" icon={journalCode} link={'https://mashanz.com'} />
