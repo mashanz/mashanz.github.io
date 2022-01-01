@@ -1,3 +1,4 @@
+import Heading from './Heading';
 import linkedin from 'bootstrap-icons/icons/linkedin.svg';
 import github from 'bootstrap-icons/icons/github.svg';
 import journalCode from 'bootstrap-icons/icons/journal-code.svg';
@@ -17,7 +18,7 @@ function SocialItem({ title = '', icon = linkedin, link = '#' }) {
 function Social() {
     return (
         <section className="md:pt-0">
-            <h1 className="font-mono text-center py-4 text-yellow-500 font-bold text-2xl">./socials</h1>
+            <Heading title='./socials' />
             <div className="grid grid-cols-1 md:grid-cols-3 md:max-w-2xl md:mx-auto px-4 md:px-0 gap-2">
                 <SocialItem title="Blog Posts" icon={journalCode} link={'https://mashanz.com/note'} />
                 <SocialItem title="LinkedIn" icon={linkedin} link={'https://www.linkedin.com/in/mashanz/'} />
