@@ -1,5 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import {
+  BrowserRouter,
+  Routes,
+  Route
+} from "react-router-dom";
 import './index.css';
 import Header from './components/Header';
 import Main from './components/Main';
@@ -7,15 +12,27 @@ import Social from './components/Social';
 import Portfolio from './components/Portfolio';
 import Footer from './components/Footer';
 import reportWebVitals from './reportWebVitals';
+import OnDemand from './pages/ondemand';
+
+function App() {
+  return (
+    <>
+      <Header />
+      <Main />
+      <Social />
+      <Portfolio />
+      <Footer />
+    </>
+  )
+}
 
 ReactDOM.render(
-  <React.StrictMode>
-    <Header />
-    <Main />
-    <Social />
-    <Portfolio />
-    <Footer />
-  </React.StrictMode>,
+  <BrowserRouter>
+    <Routes>
+      <Route path="/" element={<App />} />
+      <Route path="ondemand" element={<OnDemand />} />
+    </Routes>
+  </BrowserRouter>,
   document.getElementById('root')
 );
 
