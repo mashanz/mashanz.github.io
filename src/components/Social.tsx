@@ -19,7 +19,7 @@ function Social() {
     return (
         <section className="md:pt-0">
             <Heading title='./socials' />
-            <div className="grid grid-cols-1 md:grid-cols-3 md:max-w-2xl md:mx-auto px-4 md:px-0 gap-2">
+            <div className="grid grid-cols-1 md:grid-cols-3 md:max-w-2xl lg:max-w-5xl md:mx-auto px-4 md:px-0 gap-2">
                 <SocialItem title="Blog Posts" icon={journalCode} link={'https://mashanz.com/note'} />
                 <SocialItem title="LinkedIn" icon={linkedin} link={'https://www.linkedin.com/in/mashanz/'} />
                 <SocialItem title="GitHub" icon={github} link={'https://github.com/mashanz'} />
