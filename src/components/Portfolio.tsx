@@ -18,6 +18,7 @@ function Portfolio() {
                 <PortfolioItem title="Fastrack Academy" description="Learn to Become Full Stack Developer" image="https://fastrack.mashanz.com/static/course/meta.png" url="https://fastrack.mashanz.com" />
                 <PortfolioItem title="Expanse Tracker" description="Track Your Daily Spanding Easily" image="https://user-images.githubusercontent.com/9214059/138811707-abce8f65-4209-483a-a18a-e67ade70216a.png" url="https://mashanz.com/logbook-django/" />
                 <PortfolioItem title="On Demand Requests" description="Request Anything You Want" image="./mashanz_logo.png" url="https://mashanz.com" />
+                <PortfolioItem title="KBBI versi CLI" description="Kamus Besar Bahasa Indonesia versi Command Line" image="https://pbs.twimg.com/media/FKAGK46aMAEr-x7?format=jpg&name=medium" url="https://github.com/mashanz/kbbi-cli" />
             </div>
         </section>
     )
